@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Practice - 2</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body ng-controller="mainController">
+    <div ng-if="showMain" class="mainParent fade">
+      <div ng-if="showLeft" class="leftSide fade">
+        <div ng-if="showTopLeft" class="fade" id="topLeft"></div>
+        <div ng-if="showTopLeftNew" class="fade" id="topLeftNew"></div>
+        <div ng-if="showBotLeft" class="fade" id="botLeft"></div>
+      </div>
+      <div ng-if="showRight" class="rightSide fade">
+        <div ng-if="showTopRight" class="fade" id="topRight"></div>
+        <div ng-if="showBotRight" class="fade" id="botRight"></div>
+      </div>
+
+
+    </div>
+    <button ng-click="showMainResult()" id="mainToggle">Main Container</button>
+    <button ng-click="showLeftResult()" id="leftSideToggle">Left Side</button>
+    <button ng-click="showRightResult()" id="rightSideToggle">Right Side</button>
+    <button ng-click="showTopLeftResult()" id="topLeftToggle">Top Left</button>
+    <button ng-click="showTopLeftResultNew()" id="topLeftToggleNew">Top Left New</button>
+    <button ng-click="showBotLeftResult()" id="botLeftToggle">Bottom Left</button>
+    <button ng-click="showTopRightResult()" id="topRightToggle">Top Right</button>
+    <button ng-click="showBotRightResult()" id="botRightToggle">Bottom Right</button>
+
+<!-- Below are the scripts -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://code.angularjs.org/1.6.1/angular-animate.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="mainCtrl.js"></script>
+<script type="text/javascript" src="mainService.js"></script>
+
+<!-- Above are the scripts -->
+
+  </body>
+</html>

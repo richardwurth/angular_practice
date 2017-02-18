@@ -1,0 +1,81 @@
+body {
+  width: 90vw;
+  height: 90vh;
+  border: 1px solid red;
+}
+.mainParent {
+  width: 80%;
+  height: 80%;
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.leftSide {
+  margin: 10px;
+  width: 500px;
+  height: 90%;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.rightSide {
+  margin: 10px;
+  width: 500px;
+  height: 90%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#topLeft {
+  width: 90%;
+  height: 40%;
+  background-color: red;
+}
+#topLeftNew {
+  width: 90%;
+  height: 40%;
+  background-color: yellow;
+}
+#botLeft {
+  width: 90%;
+  height: 40%;
+  background-color: blue;
+}
+#topRight {
+  width: 90%;
+  height: 40%;
+  background-color: green;
+}
+#botRight {
+  width: 90%;
+  height: 40%;
+  background-color: purple;
+}
+/*.fade.ng-hide {
+  transition:.5s linear all;
+  opacity:0;
+}*/
+.fade.ng-enter {
+  transition:1s linear all;
+  opacity:0;
+}
+.fade.ng-enter.ng-enter-active {
+  opacity:1;
+  transform: rotate3d(1,3,2,360deg);
+}
+.fade.ng-leave {
+  transition:0.5s linear all;
+  opacity:1;
+}
+.fade.ng-leave.ng-leave-active {
+  opacity:0;
+  transform: scale(0);
+
+}
